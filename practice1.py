@@ -1,4 +1,4 @@
 import streamlit
 import pymongo
 conn_obj=pymongo.mongoclient(**streamlit.secrets["mongo"])
-print(type(conn_obj))
+db_obj=conn_obj.list_database_names()
