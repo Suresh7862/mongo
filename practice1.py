@@ -1,4 +1,3 @@
-python -m pip install pymongo
 import streamlit
 import pymongo
 conn_obj=mongoclient(localhost,27017)
