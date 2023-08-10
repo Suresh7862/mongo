@@ -1,5 +1,3 @@
 import streamlit
 import pymongo
-conn_obj=pymongo.Mongoclient(**streamlit.secrets["mongo"])
-db_obj=conn_obj['Demo']
-collection_obj=db_obj['Employee']
+conn_obj=pymongo.Mongoclient("mongodb+srv://streamlit.secrets.db_username:streamlit.secrets.db_pswd@streamlit.secrets.cluster_name.chzeolz.mongodb.net/?retryWrites=true&w=majority")
